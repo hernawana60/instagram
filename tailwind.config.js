@@ -2,7 +2,10 @@ module.export = {
   future: {
     removeDeprecatedGapUtilities: true,
   },
-  theme: {
+    theme: {
+    fill: (theme) => ({
+      red: theme('colors.red.primary')
+    }),
     colors: {
       white: "#ffffff",
       blue: {
@@ -18,5 +21,5 @@ module.export = {
         primary: "#dbdbdb",
       },
     },
-  },
+  }
 };
